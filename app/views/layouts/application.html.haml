@@ -1,11 +1,11 @@
 %html
 	%head
-	%title The tree Marko planted
-	%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
-	%meta{:charset => "utf-8"}
-	= stylesheet_link_tag "html5reset-1.6.1", "application"
-	= javascript_include_tag :defaults
-	= hoptoad_javascript_notifier
-	= csrf_meta_tag
+		%title The tree Marko planted
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+		%meta{:charset => "utf-8"}
+		= stylesheet_link_tag "html5reset-1.6.1", "application"
+		= javascript_include_tag :defaults
+		= hoptoad_javascript_notifier
+		= csrf_meta_tag
 	%body
 		= yield

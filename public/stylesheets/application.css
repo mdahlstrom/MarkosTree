@@ -1,6 +1,10 @@
 html {
   background-color: #aaF; }
 
+header h1 {
+  width: 250px;
+  color: #444; }
+
 .desaturated-sun {
   position: absolute;
   top: 10px;
@@ -12,15 +16,41 @@ html {
   left: 100px;
   height: 200px; }
 
-.leaves {
+#tree-crown .leaves {
   position: absolute;
   bottom: 180px;
   left: 30px;
   width: 260px;
   height: 100px; }
+#tree-crown .mathias {
+  position: absolute;
+  bottom: 170px;
+  left: 200px; }
 
 .grass {
   position: absolute;
   bottom: 0px;
   width: 100%;
   height: 60px; }
+
+.wiggle {
+  -webkit-animation-name: wiggle;
+  -webkit-animation-duration: 6.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg); }
+
+  25% {
+    -webkit-transform: scale(1) rotate(-50deg); }
+
+  50% {
+    -webkit-transform: scale(1) rotate(0deg); }
+
+  75% {
+    -webkit-transform: scale(1) rotate(50deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg); } }
