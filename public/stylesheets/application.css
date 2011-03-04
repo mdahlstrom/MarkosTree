@@ -21,13 +21,49 @@ header h1 {
 #tree-crown .leaves {
   position: absolute;
   bottom: 180px;
-  left: 30px;
-  width: 260px;
-  height: 100px; }
+  left: 20px;
+  width: 280px;
+  height: 120px; }
+#tree-crown .johnny {
+  position: absolute;
+  bottom: 225px;
+  left: 250px; }
+#tree-crown .assunta {
+  position: absolute;
+  bottom: 185px;
+  left: 255px; }
+#tree-crown .kim {
+  position: absolute;
+  bottom: 180px;
+  left: 240px; }
+#tree-crown .dave {
+  position: absolute;
+  bottom: 165px;
+  left: 115px; }
+#tree-crown .marko {
+  position: absolute;
+  bottom: 150px;
+  left: 135px; }
 #tree-crown .mathias {
   position: absolute;
+  bottom: 160px;
+  left: 180px; }
+#tree-crown .jason {
+  position: absolute;
   bottom: 170px;
-  left: 200px; }
+  left: 205px; }
+#tree-crown .russ {
+  position: absolute;
+  bottom: 180px;
+  left: 25px; }
+#tree-crown .richard {
+  position: absolute;
+  bottom: 165px;
+  left: 65px; }
+#tree-crown .sam {
+  position: absolute;
+  bottom: 210px;
+  left: 25px; }
 
 .grass {
   position: absolute;
@@ -36,23 +72,39 @@ header h1 {
   height: 60px; }
 
 .wiggle {
-  -webkit-animation-name: wiggle;
+  -webkit-animation-name: wiggle_left;
   -webkit-animation-duration: 6.5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out; }
 
-@-webkit-keyframes wiggle {
+.wiggle_reverse {
+  -webkit-animation-name: wiggle_right;
+  -webkit-animation-duration: 6.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes wiggle_left {
   0% {
     -webkit-transform: scale(1) rotate(0deg); }
 
   25% {
-    -webkit-transform: scale(1) rotate(-50deg); }
-
-  50% {
-    -webkit-transform: scale(1) rotate(0deg); }
+    -webkit-transform: scale(1) rotate(-30deg); }
 
   75% {
-    -webkit-transform: scale(1) rotate(50deg); }
+    -webkit-transform: scale(1) rotate(30deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0deg); } }
+
+@-webkit-keyframes wiggle_right {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg); }
+
+  25% {
+    -webkit-transform: scale(1) rotate(30deg); }
+
+  75% {
+    -webkit-transform: scale(1) rotate(-30deg); }
 
   100% {
     -webkit-transform: scale(1) rotate(0deg); } }
