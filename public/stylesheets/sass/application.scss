@@ -3,7 +3,7 @@ html {
 }
 
 header h1 {
-	width: 250px;
+	width: 310px;
 	color:#444;
 	font-size:80%;
 	padding: 5px;
@@ -12,10 +12,6 @@ header h1 {
 	position:absolute;
 	top: 10px;
 	right:20px;
-}
-
-.logo-text {
-	
 }
 
 .stem {
@@ -107,6 +103,34 @@ header h1 {
 	-webkit-animation-timing-function: ease-in-out;
 }
 
+.jason_drop {
+	-webkit-animation-name: jason_fall;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+}
+
+.sam_drop {
+	-webkit-animation-name: sam_fall;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+}
+
+.kim_drop {
+	-webkit-animation-name: kim_fall;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+}
+
+.marko_drop {
+	-webkit-animation-name: marko_fall;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease-in;
+}
+
 @-webkit-keyframes wiggle_left {
 	0% {
 		-webkit-transform: scale(1.0) rotate(0deg);
@@ -134,5 +158,50 @@ header h1 {
 	}
 	100% {
 		-webkit-transform: scale(1.0) rotate(0deg);
+	}
+}
+
+
+@-webkit-keyframes jason_fall {
+	0% {
+		bottom: 170px;
+		left: 205px;
+	}
+	100% {
+		bottom: 30px;
+		left: 200px;
+	}
+}
+
+@-webkit-keyframes sam_fall {
+	0% {
+		bottom: 210px;
+		left: 25px;
+	}
+	100% {
+		bottom: 30px;
+		left: 35px;
+	}
+}
+
+@-webkit-keyframes kim_fall {
+	0% {
+		bottom: 180px;
+		left: 240px;
+	}
+	100% {
+		bottom: 30px;
+		left: 243px;
+	}
+}
+
+@-webkit-keyframes marko_fall {
+	0% {
+		bottom: 150px;
+		left: 135px;
+	}
+	100% {
+		bottom: 30px;
+		left: 130px;
 	}
 }
